@@ -18,9 +18,8 @@
 </head>
 
 <body>
-    <header>
-        <!-- place navbar here -->
-    </header>
+    <div id="headerPlaceholder"></div>
+
     <main>
         <div class="Home-parent">
             <div class="container mt-5 text-center">
@@ -48,6 +47,14 @@
     <footer>
         <!-- place footer here -->
     </footer>
+    <script>
+        // Load the header from the external file
+        fetch('user-header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('headerPlaceholder').innerHTML = data;
+            });
+      </script>
     <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"

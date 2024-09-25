@@ -13,6 +13,8 @@
 </head>
 
 <body>
+    <div id="headerPlaceholder"></div>
+
     <div class="parent-user-appoinment">
     <div class="container-fluid mt-5">
         <div class="no-appointments-section bg-light p-4 rounded">
@@ -38,6 +40,13 @@
         </div>
     </div>
 </div>
-    
+<script>
+    // Load the header from the external file
+    fetch('user-header.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('headerPlaceholder').innerHTML = data;
+        });
+  </script>
 </body>
 </html>
