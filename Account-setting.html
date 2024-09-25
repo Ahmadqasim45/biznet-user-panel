@@ -5,11 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Account Settings</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
+<<<<<<< HEAD
    
 
+=======
+    <div id="headerPlaceholder"></div>
+>>>>>>> 0ee8a2570f806e3b8dc884329d1f8e53bf3140b7
     <div class="account-setting-parent">
         <div class="container account-settings">
             <h2 class="text-center">Account Settings</h2>
@@ -98,5 +102,14 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        // Load the header from the external file
+        fetch('user-header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('headerPlaceholder').innerHTML = data;
+            });
+    </script>
 </body>
 </html>

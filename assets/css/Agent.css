@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.Agent-parent{
+.agent-heading {
+    margin-top: 20px;
+}
+input.form-control {
+    border: 1px solid #ced4da;
+}
+
+}

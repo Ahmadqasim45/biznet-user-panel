@@ -16,6 +16,7 @@
 </head>
 
 <body>
+  <div id="headerPlaceholder"></div>
  
 <!-- header  -->
 
@@ -25,7 +26,7 @@
   <div class="owner-dashboaed-parent ">
     <!-- ==========Navbar============= -->
     <section >
-      <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary ">
         <div class="container-fluid">
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -121,6 +122,14 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
+    <script>
+      // Load the header from the external file
+      fetch('user-header.html')
+          .then(response => response.text())
+          .then(data => {
+              document.getElementById('headerPlaceholder').innerHTML = data;
+          });
+  </script>
   
 </body>
 

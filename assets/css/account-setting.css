@@ -12,14 +12,14 @@
     align-items: center;
     justify-content: center;
     margin-bottom: 20px;
-    background-color: #e2f3f9;
+    background-color: var(--color);
     padding: 20px;
 
 }
 .profile-photo .rounded-circle {
     width: 90px;
     height: 90px;
-    background-color: #8a4af3;
+    background-color: var(--background_color);
     color: white;
     display: flex;
     align-items: center;
