@@ -4,7 +4,9 @@
     box-sizing: border-box;
 }
 .Home-parent{
- 
+ .container-open-house{
+    margin-top: 100px !important;
+ }
 
 input.form-control {
     border: 1px solid #ced4da;

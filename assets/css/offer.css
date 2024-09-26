@@ -10,6 +10,9 @@
       height: fit-content;
       text-align: center;
     }
+    .container-user-offer{
+      margin-top: 100px !important;
+    }
 
     .offer-placeholder img {
       width: 150px;

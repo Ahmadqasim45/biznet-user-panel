@@ -5,7 +5,9 @@
       justify-content: center;
       background-color: #f8f9fa;
     }
-
+.favourite-container{
+  margin-top: 100px !important;
+}
     .card-placeholder img {
       width: 50px;
       height: auto;
