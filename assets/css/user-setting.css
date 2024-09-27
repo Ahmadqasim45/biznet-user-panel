@@ -9,6 +9,9 @@
         border: 1px solid black;
         border-radius: 12px;
     }
+    .container-user-setting{
+        margin-top: 100px !important;
+    }
 
     .custom-switch input {
         opacity: 0;

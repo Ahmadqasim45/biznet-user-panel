@@ -4,6 +4,9 @@
     box-sizing: border-box;
 }
 .Agent-parent{
+    .container-agent{
+        margin-top: 100px !important;
+    }
 .agent-heading {
     margin-top: 20px;
 }
